@@ -34,6 +34,7 @@
     margin-bottom: 20px;
 }
 
+
 .row {
     display: flex;
     align-items: center;
@@ -50,16 +51,51 @@ input{
     outline: none;
     background: transparent;
     padding: 10px;
-
 }
 
-button{
+button {
     border: none;
     outline: none;
     padding: 16px 50px;
-    background: #89525b;
+    background: #4e3d40;
     color: white;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 40px;
+    border-radius: 30px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 15px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: "";
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    /* took me a while to change the top from 12px to 8px so the circle aligns with task*/
+    left: 8px;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+    color: #555;
+}
+
+ul li.checked::before {
+    background-image: url(images/checked.png);
+    background-size: cover;
+    background-position: center;
 }
