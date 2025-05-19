@@ -99,3 +99,21 @@ ul li.checked::before {
     background-size: cover;
     background-position: center;
 }
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #000000;
+    line-height: 40px;
+    text-align: center;
+}
+
+ul li span:hover{
+    background: #a29ea0;
+    border-radius: 50%;
+    color: white;
+}
